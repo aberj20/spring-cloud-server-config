@@ -1,0 +1,12 @@
+#Spring configuration
+spring:
+   application:
+      name: servicio.cesta
+ #http server
+server: 
+   port: 1112
+  #Discovery server acces
+eureka:
+    client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka 
