@@ -9,4 +9,13 @@ server:
 eureka:
     client:
       serviceUrl:
-         defaultZone: http://localhost:8761/eureka 
+         defaultZone: http://localhost:8761/eureka
+#configuracion de ribon para balanceo de carga entre los microservcios invocados
+servicio.catalogo:
+   ribbon:
+      EnableZoneAffinity: true
+      EnableZoneExclusive: false
+      zoneAffinity:
+         minAvailableServers: 1
+         maxLoadPerServer: 0.8
+         maxBlackOutServersPercentage: 0.6
