@@ -26,4 +26,9 @@ spring.datasource:
 spring.jpa:
  show-sql: true
  hibernate.ddl-auto: update
- database-platform: org.hibernate.dialect.MySQL5InnoDBDialect  
+ database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+ 
+ security: 
+  oauth2: 
+    resource:
+      user-info-uri: http://localhost:7777/user
