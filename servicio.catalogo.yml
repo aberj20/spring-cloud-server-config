@@ -2,7 +2,7 @@
 eureka: 
   client: 
     serviceUrl: 
-      defaultZone: "http://172.17.0.3:8761/eureka"
+      defaultZone: "http://172.17.0.3:5555/eureka"
       
   instance: 
     healthCheckUrlPath: "/healthCatalogo"
